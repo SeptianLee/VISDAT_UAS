@@ -22,7 +22,7 @@ st.title("📊 Visualisasi Data Penjualan")
 # Fungsi untuk Load Data
 @st.cache_data
 def load_data():
-    df = pd.read_csv('Datamentah_.csv', encoding='latin-1')
+    df = pd.read_csv('Datamentah.csv', encoding='latin-1')
     
     # Preprocessing
     df['tglpo'] = pd.to_datetime(df['tglpo'], errors='coerce')
